@@ -1,0 +1,113 @@
+<mvc:View
+    controllerName="gmsfiori.controller.serviceP"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <ScrollContainer
+        height="100%"
+        width="100%"
+        vertical="true"
+        horizontal="true"
+        focusable="true">
+    <Shell id="shell">
+    <App id="app">
+        <pages>
+            <Page id="page" title="{i18n>title}" enableScrolling="true"
+    showHeader="false">
+                <content>
+                    <Table items="{mainModel>/service}" id="table0"  selectionChange="onSelect">
+                       
+                        <items>
+                            <ColumnListItem type="Active" id="item0">
+                                <cells>
+                                    <Text id="id1" text="{mainModel>ServiceParameter}"/>    
+                                    <Text id="id2" text="{mainModel>id}" />
+                                    <Input width="60px"></Input>
+                                    <CheckBox id="chxbox"></CheckBox>
+                                    <CheckBox ></CheckBox>
+                                    <CheckBox ></CheckBox>
+                                    <CheckBox ></CheckBox>
+                                    <CheckBox ></CheckBox>
+                                    <CheckBox ></CheckBox>
+                                    <CheckBox ></CheckBox>
+                                    <CheckBox ></CheckBox>
+                                    <CheckBox ></CheckBox>
+                                                                         
+ 
+                                   
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                        <columns>
+                           
+                            <Column id="_IDGenColumn2" width="7rem">
+                                <header>
+                                    <Label id="_IDGenLabel7" text="Service Parameter"  />
+                                </header>
+                            </Column>
+                            <Column id="_IDGenColumn1" width="2rem">
+                                <header>
+                                    <Label id="_IDGenLabel6" text="ID" />
+                                </header>
+                            </Column>
+                            <Column id="_IDGenColum" width="5rem">
+                                <header>
+                                    <Label id="_IDGenLabe" text="Parent ID" />
+                                </header>
+                            </Column>
+                            <Column id="_IDGenColun3" width="7rem">
+                                <header>
+                                    <Label id="_IDGenLab7" text="Contract Relevant" />
+                                </header>
+                            </Column>
+                            <Column  width="7rem">
+                                <header>
+                                    <Label  text="Quantity Parameter" />
+                                </header>
+                            </Column>
+                            <Column width="7rem">
+                                <header>
+                                    <Label  text="Threshold Relevance" />
+                                </header>
+                            </Column>
+                            <Column width="8rem">
+                                <header>
+                                    <Label  text="Referrence Relevant" />
+                                </header>
+                            </Column>
+                            <Column width="8rem">
+                                <header>
+                                    <Label  text="Nomination Relevant" />
+                                </header>
+                            </Column>
+                            <Column width="8rem">
+                                <header>
+                                    <Label  text="Balancing Relevant" />
+                                </header>
+                            </Column>
+                            <Column width="8rem">
+                                <header>
+                                    <Label  text="Allocation Relevant" />
+                                </header>
+                            </Column>
+                             <Column width="6rem">
+                                <header>
+                                    <Label  text="Billing Relevant" />
+                                </header>
+                            </Column>
+                             <Column width="6rem">
+                                <header>
+                                    <Label  text="Price Relevant" />
+                                </header>
+                            </Column>
+ 
+                        </columns>
+                    </Table>
+                </content>
+            </Page>
+        </pages>
+    </App>
+</Shell>
+</ScrollContainer>
+</mvc:View>

@@ -1,0 +1,51 @@
+<mvc:View controllerName="gmsfiori.controller.CGC"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:f="sap.f"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+   
+       <SplitApp id="_IDGenSplitApp1" >
+    <masterPages>
+        <Page
+                id="master"
+                title=""
+                backgroundDesign= "List">
+                <List id="_IDGenList6">
+                    <StandardListItem id="_IDGenStandardListItem8" title="Document Type" type="Navigation" press=".onHeader" />
+                    <!-- <StandardListItem id="_IDGenStandardListItem9" title="Item" type="Navigation" press=".onPressGoToMaster" />
+                    <StandardListItem id="_IDGenStandardListItem10" title="Service Profile" type="Navigation" press=".onPressGoToMaster1" /> -->
+                </List>
+            </Page>
+    <Page id="master2"
+        title="Contract Type"
+                backgroundDesign="List"
+                showNavButton="true"
+                navButtonPress=".onPressMasterBack">
+                <List id="_IDGenList4" itemPress=".onListItemPress">
+                    <items>
+                        <StandardListItem id="_IDGenStandardListItem1" title="GSA" type="Active" press=".onGSA" />
+                        <StandardListItem id="_IDGenStandardListItem2" title="GTA" type="Active" press=".onGTA" />
+                        <!-- <StandardListItem id="_IDGenStandardListItem3" title="" type="Active" /> -->
+                    </items>
+                </List>
+    </Page>
+    <!-- <Page  id="master3"
+                title="Master 3"
+                backgroundDesign="List"
+                showNavButton="true"
+                navButtonPress=".onPressMasterBack">
+                <List id="_IDGenList5" itemPress=".onListItemPress">
+                    <items>
+                        <StandardListItem id="_IDGenStandardListItem4" title="To Detail 1" type="Active"  />
+                        <StandardListItem id="_IDGenStandardListItem5" title="To Detail 2" type="Active"  />
+                        <StandardListItem id="_IDGenStandardListItem6" title="To Detail 3" type="Active" />
+                    </items>
+                </List></Page> -->
+                </masterPages>
+                </SplitApp>
+       
+                
+          
+       
+   
+</mvc:View>

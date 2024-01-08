@@ -1,0 +1,27 @@
+id,ServiceParameter
+1,Firm
+10,Interuptable
+3,Annual Turnover Quantity
+4,Annual Volume Deficiency
+5,Authorized Volume
+6,Banked Gas Account
+7,Billing Contract Demande
+8,Billing Month
+9,Buy/Sell Price
+11,Commodity Charge
+2,Allocation Profile
+12,Rank
+13,DCQ
+14,MDCQ
+15,MCQ
+16,DIQ
+17,DWQ
+18,Fuel Provider
+19,Fuel%
+20,AACQ
+21,Overrun allowed
+22,Underrun allowed
+23,Take or pay
+24,Early Termination Charges
+25,Payment or Late Payment Charges
+26,Rate Class

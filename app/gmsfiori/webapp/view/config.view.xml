@@ -1,0 +1,31 @@
+<mvc:View
+    controllerName="gmsfiori.controller.config"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="GAS MANAGEMENT SYSTEM"
+        titleAlignment="Center"
+    >
+        <GenericTile
+            id="_IDGenGenericTile1"
+            class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+            header="Initial / Item Screen"
+            press="Onconfig"
+        />
+        <GenericTile
+            id="_IDGenGenericTile2"
+            class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+            header="Service Profile"
+            press="onServP"
+        />
+        <GenericTile
+            id="_IDGenGenericTile3"
+            class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+            header="Service Profile Config"
+            press="onServConfig"
+        />
+    </Page>
+</mvc:View>

@@ -1,0 +1,17 @@
+<mvc:View controllerName="gmsfiori.controller.tile1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="GAS MANAGEMENT SYSTEM" titleAlignment="Center">
+    
+      
+	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"  header="Configuration" press="Onconfig">
+
+	</GenericTile>
+
+	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Create" press="onCreate">
+		
+	</GenericTile>
+
+
+    </Page>
+</mvc:View>

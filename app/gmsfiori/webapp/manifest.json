@@ -1,0 +1,361 @@
+{
+  "_version": "1.59.0",
+  "sap.app": {
+    "id": "gmsfiori",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.12.1",
+      "toolsId": "f87e8718-f1a5-4c7b-9b8e-865dd1927c24"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/odata/v4/gmsbtp/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "localUri": "localService/metadata.xml",
+          "odataVersion": "4.0"
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.120.4",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.ui.table": {},
+        "sap.ushell": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "gmsfiori.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "synchronizationMode": "None",
+          "operationMode": "Server",
+          "autoExpandSelect": true,
+          "earlyRequests": true
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.f.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "gmsfiori.view",
+        "controlId": "flex"
+      },
+      "routes": [
+        {
+          "name": "RouteView1",
+          "pattern": ":?query:",
+          "layout": "OneColumn",
+          "target": [
+            "TargetView1"
+          ]
+        },
+        {
+          "name": "RouteView2",
+          "pattern": "tiles",
+          "layout": "OneColumn",
+          "target": [
+            "TargetView2"
+          ]
+        },
+        {
+          "name": "RouteView3",
+          "pattern": "gasContract",
+          "layout": "OneColumn",
+          "target": [
+            "TargetView3"
+          ]
+        },
+        {
+          "name": "RouteView4",
+          "pattern": "nomtiles",
+          "layout": "OneColumn",
+          "target": [
+            "TargetView4"
+          ]
+        },
+        {
+          "name": "RouteView5",
+          "pattern": "CGC",
+          "layout": "TwoColumnsMidExpanded",
+          "target": [
+            "TargetView5",
+            "TargetView6"
+          ]
+        },
+        {
+          "name": "RouteView6",
+          "pattern": "CGChome",
+          "layout": "TwoColumnsMidExpanded",
+          "target": [
+            "TargetView5",
+            "TargetView6"
+          ]
+        },
+        {
+          "name": "RouteView7",
+          "pattern": "createNom",
+          "layout": "ThreeColumnsMidExpanded",
+          "target": [
+            "TargetView7",
+            "TargetView8",
+            "TargetView9"
+          ]
+        },
+        {
+          "name": "RouteView8",
+          "pattern": "DetailNom",
+          "layout": "ThreeColumnsMidExpanded",
+          "target": [
+            "TargetView7",
+            "TargetView8",
+            "TargetView9"
+          ]
+        },
+        {
+          "name": "RouteView9",
+          "pattern": "PastNom",
+          "layout": "ThreeColumnsMidExpanded",
+          "target": [
+            "TargetView7",
+            "TargetView8",
+            "TargetView9"
+          ]
+        },
+        {
+          "name": "RouteView10",
+          "pattern": "config",
+          "layout": "OneColumn",
+          "target": [
+            "TargetView10"
+          ]
+        },
+        {
+          "name": "RouteView11",
+          "pattern": "gta",
+          "layout": "TwoColumnsMidExpanded",
+          "target": [
+            "TargetView5",
+            "TargetView11"
+          ]
+        },
+        {
+          "name": "RouteView12",
+          "pattern": "AGC",
+          "layout": "OneColumn",
+          "target": [
+            "TargetView12"
+          ]
+        },
+        {
+          "name": "RouteView13",
+          "pattern": "DetailreNom",
+          "layout": "ThreeColumnsMidExpanded",
+          "target": [
+            "TargetView7",
+            "TargetView13",
+            "TargetView14"
+          ]
+        },
+        {
+          "name": "RouteView14",
+          "pattern": "PastreNom",
+          "layout": "ThreeColumnsMidExpanded",
+          "target": [
+            "TargetView7",
+            "TargetView13",
+            "TargetView14"
+          ]
+        },
+        {
+          "name": "RouteView15",
+          "pattern": "servicepro",
+          "layout": "OneColumn",
+          "target": [
+            "TargetView15"
+          ]
+        },{
+          "name": "RouteView16",
+          "pattern": "initial_item_config",
+          "layout": "OneColumn",
+          "target": [
+            "TargetView16"
+          ]
+        }
+      ],
+      "targets": {
+        "TargetView1": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "beginColumnPages",
+          "viewId": "tile1",
+          "viewName": "tile1"
+        },
+        "TargetView2": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "beginColumnPages",
+          "viewId": "tile2",
+          "viewName": "tile2"
+        },
+        "TargetView3": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "beginColumnPages",
+          "viewId": "Gascontract",
+          "viewName": "Gascontract"
+        },
+        "TargetView4": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "beginColumnPages",
+          "viewId": "nomtiles",
+          "viewName": "nomtiles"
+        },
+        "TargetView5": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "beginColumnPages",
+          "viewId": "CGC",
+          "viewName": "CGC"
+        },
+        "TargetView6": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "midColumnPages",
+          "viewId": "CGChome",
+          "viewName": "CGChome"
+        },
+        "TargetView7": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "beginColumnPages",
+          "viewId": "createNom",
+          "viewName": "createNom"
+        },
+        "TargetView8": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "midColumnPages",
+          "viewId": "DetailNom",
+          "viewName": "DetailNom"
+        },
+        "TargetView9": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "endColumnPages",
+          "viewId": "PastNom",
+          "viewName": "PastNom"
+        },
+        "TargetView10": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "beginColumnPages",
+          "viewId": "config",
+          "viewName": "config"
+        },
+        "TargetView11": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "midColumnPages",
+          "viewId": "gta",
+          "viewName": "gta"
+        },
+        "TargetView12": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "beginColumnPages",
+          "viewId": "AGC",
+          "viewName": "AGC"
+        },
+        "TargetView13": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "midColumnPages",
+          "viewId": "DetailreNom",
+          "viewName": "DetailreNom"
+        },
+        "TargetView14": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "endColumnPages",
+          "viewId": "PastreNom",
+          "viewName": "PastreNom"
+        },
+        "TargetView15": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "beginColumnPages",
+          "viewId": "serviceP",
+          "viewName": "serviceP"
+        },"TargetView16": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "beginColumnPages",
+          "viewId": "Initial_ItemConfig",
+          "viewName": "Initial_ItemConfig"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "gmsfiori.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<mvc:View controllerName="gmsfiori.controller.Gascontract"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+	
+   	<GenericTile id="_IDGenGenericTile1" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Create Gas Contracts"
+		 press="onCGC">
+		<TileContent id="_IDGenTileContent1" >
+			<ImageContent id="_IDGenImageContent1" src="sap-icon://request"/>
+		</TileContent>
+	</GenericTile>
+   	<GenericTile id="_IDGenGenericTile2" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Amend Gas Contracts"
+		 press="Amendcontract">
+		<TileContent id="_IDGenTileContent2" >
+			<ImageContent id="_IDGenImageContent2" src="sap-icon://show-edit" />
+		</TileContent>
+	</GenericTile>
+   	<GenericTile id="_IDGenGenericTile3" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Display Gas Contracts"
+		 press="displaycontract">
+		<TileContent id="_IDGenTileContent3" >
+			<ImageContent id="_IDGenImageContent3" src="https://www.shutterstock.com/image-vector/glasses-icon-vector-260nw-731508667.jpg" />
+		</TileContent>
+	</GenericTile>
+   	<GenericTile id="_IDGenGenericTile4" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Validate Gas Contracts"
+		 press="gen">
+		<TileContent id="_IDGenTileContent4" >
+			<ImageContent id="_IDGenImageContent4" src="sap-icon://decision" />
+		</TileContent>
+	</GenericTile>
+</mvc:View>

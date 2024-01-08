@@ -1,0 +1,54 @@
+<mvc:View controllerName="gmsfiori.controller.nomtiles"
+
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+     <OverflowToolbar id="_IDGenOverflowToolbar1" >
+ <Toolbar id="_IDGenToolbar1" >
+ <Title id="_IDGenTitle1" text="Nominations" textAlign="Center"></Title>
+ </Toolbar>
+
+  </OverflowToolbar>
+  	<GenericTile id="_IDGenGenericTile1" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+    header="Publish Gas Nomination"
+		 press="masterdet">
+		<TileContent id="_IDGenTileContent1" >
+			<ImageContent id="_IDGenImageContent1" src="sap-icon://decision" />
+		</TileContent>
+	</GenericTile>
+  	<GenericTile id="_IDGenGenericTile2" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+     header="Publish Gas ReNomination"
+	press="reNomination">
+		<TileContent id="_IDGenTileContent2"  >
+			<ImageContent id="_IDGenImageContent2" src="sap-icon://clinical-order" />
+		</TileContent>
+	</GenericTile>
+  	<GenericTile id="_IDGenGenericTile3" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+     header="Display Gas Nomination"
+		 press="nommain">
+		<TileContent id="_IDGenTileContent3" >
+			<ImageContent id="_IDGenImageContent3" src="sap-icon://sys-find" />
+		</TileContent>
+	</GenericTile>
+  	<GenericTile id="_IDGenGenericTile4" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+    header="Create System Nomination"
+		 press="gasday">
+		<TileContent id="_IDGenTileContent4" >
+			<ImageContent id="_IDGenImageContent4" src="sap-icon://home-share" />
+		</TileContent>
+	</GenericTile>
+  	<GenericTile id="_IDGenGenericTile5" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+     header="Pipeline Map"
+		 press="masterdet">
+		<TileContent id="_IDGenTileContent5" >
+			<ImageContent id="_IDGenImageContent5" src="sap-icon://Chart-Tree-Map" />
+		</TileContent>
+	</GenericTile>
+  	<GenericTile id="_IDGenGenericTile6" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+    header="Validate nomination"
+		 press="gen">
+		<TileContent id="_IDGenTileContent6" >
+			<ImageContent id="_IDGenImageContent6" src="sap-icon://detail-view" />
+		</TileContent>
+	</GenericTile>
+   
+</mvc:View>

@@ -1,0 +1,1 @@
+using GMSBTP as service from '../../srv/service';
