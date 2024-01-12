@@ -13,7 +13,7 @@
             <IconTabFilter
                 id="_IDGenIconTabFilter1"
                 icon="sap-icon://accept"
-                text="Initial screen"
+                text="Header Details"
                 iconColor="Positive"
             >
           
@@ -55,7 +55,7 @@
                                 <Toolbar id="TB1">
                                     <Title
                                         id="Title1"
-                                        text="Details"
+                                        text="Header Details"
                                     />
                                 </Toolbar>
                             </f:toolbar>

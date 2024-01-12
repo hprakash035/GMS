@@ -89,6 +89,14 @@
                 </Key>
                 <Property Name="Msehi" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Internal UoM" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="unit-of-measure"/>
             </EntityType>
+            <EntityType Name="LocationPoint" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Locid"/>
+                </Key>
+                <Property Name="Locid" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Location ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Loctyp" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Location type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Locnam" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:label="Location name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
             <EntityContainer Name="ZGMS_VALUE_HELP_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
                 <EntitySet Name="MaterialSet" EntityType="ZGMS_VALUE_HELP_SRV.Material" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
                 <EntitySet Name="PlantSet" EntityType="ZGMS_VALUE_HELP_SRV.Plant" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
@@ -103,10 +111,11 @@
                 <EntitySet Name="Ship_To_PartySet" EntityType="ZGMS_VALUE_HELP_SRV.Ship_To_Party" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
                 <EntitySet Name="Sales_ContractSet" EntityType="ZGMS_VALUE_HELP_SRV.Sales_Contract" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
                 <EntitySet Name="UOMSet" EntityType="ZGMS_VALUE_HELP_SRV.UOM" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="LocationPointSet" EntityType="ZGMS_VALUE_HELP_SRV.LocationPoint" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
             </EntityContainer>
-            <atom:link rel="self" href="http://myserver:8002/sap/opu/odata/sap/ZGMS_VALUE_HELP_SRV/$metadata"
+            <atom:link rel="self" href="http://myserver:8938/sap/opu/odata/sap/ZGMS_VALUE_HELP_SRV/$metadata"
                 xmlns:atom="http://www.w3.org/2005/Atom"/>
-                <atom:link rel="latest-version" href="http://myserver:8002/sap/opu/odata/sap/ZGMS_VALUE_HELP_SRV/$metadata"
+                <atom:link rel="latest-version" href="http://myserver:8938/sap/opu/odata/sap/ZGMS_VALUE_HELP_SRV/$metadata"
                     xmlns:atom="http://www.w3.org/2005/Atom"/>
                 </Schema>
             </edmx:DataServices>

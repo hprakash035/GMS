@@ -1,4 +1,4 @@
-/* checksum : bc2251375d432c394308b5a94f4fbd72 */
+/* checksum : c551cb089c20be911f163056d73be987 */
 @cds.external : true
 @m.IsDefaultEntityContainer : 'true'
 @sap.supported.formats : 'atom json xlsx'
@@ -259,5 +259,36 @@ entity ZGMS_VALUE_HELP_SRV.UOMSet {
   @sap.filterable : 'false'
   @sap.semantics : 'unit-of-measure'
   key Msehi : String(3) not null;
+};
+
+@cds.external : true
+@cds.persistence.skip : true
+@sap.creatable : 'false'
+@sap.updatable : 'false'
+@sap.deletable : 'false'
+@sap.pageable : 'false'
+@sap.content.version : '1'
+entity ZGMS_VALUE_HELP_SRV.LocationPointSet {
+  @sap.unicode : 'false'
+  @sap.label : 'Location ID'
+  @sap.creatable : 'false'
+  @sap.updatable : 'false'
+  @sap.sortable : 'false'
+  @sap.filterable : 'false'
+  key Locid : String(10) not null;
+  @sap.unicode : 'false'
+  @sap.label : 'Location type'
+  @sap.creatable : 'false'
+  @sap.updatable : 'false'
+  @sap.sortable : 'false'
+  @sap.filterable : 'false'
+  Loctyp : String(4) not null;
+  @sap.unicode : 'false'
+  @sap.label : 'Location name'
+  @sap.creatable : 'false'
+  @sap.updatable : 'false'
+  @sap.sortable : 'false'
+  @sap.filterable : 'false'
+  Locnam : String(60) not null;
 };
 

@@ -18,11 +18,6 @@ sap.ui.define(
              const oRouter = this.getOwnerComponent().getRouter();
              oRouter.navTo("RouteView1", {}, true);
            }
-        },onPressHome: function() {
-          
-             const oRouter = this.getOwnerComponent().getRouter();
-             oRouter.navTo("RouteView1", {}, true);
-           
         }
       });
     }

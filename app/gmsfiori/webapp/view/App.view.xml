@@ -10,7 +10,7 @@
 <Panel id="_IDGenPanel1" >
     <tnt:ToolHeader  class="sapUiTinyMargin">
             <Button visible="true" icon="sap-icon://nav-back" type="Transparent"  press="onPressBack"/>
-            <Button visible="true" icon="sap-icon://home" type="Transparent"  press="onPressHome"/>
+            
             <Image src="./Images/logo.png" decorative="false" press="onLogoPressed" tooltip="Ingenx Logo" width="100px" height="40px" />
             <ToolbarSpacer  width="15px" />
             <Title text="Gas Management System" wrapping="true" id="productName"/>
