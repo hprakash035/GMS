@@ -5,8 +5,10 @@
     xmlns:f="sap.ui.layout.form"
     xmlns:core="sap.ui.core"
     xmlns="sap.m"
+    xmlns:ui="sap.ui.table"
 >
-    <IconTabBar id="_IDGenIconTabBar1">
+
+    <IconTabBar id="_IDGenIconTabBar1">    
         <items>
             <IconTabFilter
                 id="_IDGenIconTabFilter1"
@@ -14,6 +16,8 @@
                 text="Initial screen"
                 iconColor="Positive"
             >
+          
+            
                 <ScrollContainer
                     id="_IDGenScrollContainer1"
                     vertical="true"
@@ -130,12 +134,14 @@
                                             change="handleChange"
                                             width="150px"
                                         />
+                                         
                                     </VBox>
                                 </VBox>
                             </f:content>
                         </f:SimpleForm>
                     </Panel>
                 </ScrollContainer>
+
             </IconTabFilter>
 
             <IconTabFilter

@@ -1,0 +1,10 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <items>
+        <core:Repeat list="{/gsaInitialConfiguration}" var="config">
+            <VBox visible="{= ${config/Initial_page} }">
+                <Label text="{config/Service_Parameters}" />
+                <Input value="{config/UserInput}" />
+            </VBox>
+        </core:Repeat>
+    </items>
+</core:FragmentDefinition>

@@ -1,33 +1,23 @@
 <mvc:View
-	controllerName="gmsfiori.controller.Initial_ItemConfig"
+	controllerName="gmsfiori.controller.check"
 	xmlns="sap.ui.table"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:u="sap.ui.unified"
-	xmlns:core="sap.ui.core"
+	xmlns:c="sap.ui.core"
 	xmlns:m="sap.m"
     height="100%">
 	<m:Page
+		showHeader="false"
 		
-		enableScrolling="false"
 		class="sapUiContentPadding">
-         
 		<m:content>
-		
-		
          <m:Button text="Save Configuration" press="onGetSelectedValuesgsa"/>
-		 		
 			<Table id="table0"
-				rows="{/ServiceParameter}"
+				rows="{/gsaInitialConfiguration}"
 				selectionMode="MultiToggle"
-				paste="onPaste"
-				ariaLabelledBy="title"
-                
+				
                 >
-				<extension>
-					<m:OverflowToolbar style="Clear">
-						<m:Title id="title" text="Configuration"/>
-					</m:OverflowToolbar>
-				</extension>
+				
 				<columns>
 					<Column>
 						<m:Label text="Service Parameters Id" />

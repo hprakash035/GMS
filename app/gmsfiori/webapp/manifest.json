@@ -235,6 +235,13 @@
           "target": [
             "TargetView16"
           ]
+        },{
+          "name": "RouteView17",
+          "pattern": "initial_item_config_check",
+          "layout": "OneColumn",
+          "target": [
+            "TargetView17"
+          ]
         }
       ],
       "targets": {
@@ -348,6 +355,12 @@
           "controlAggregation": "beginColumnPages",
           "viewId": "Initial_ItemConfig",
           "viewName": "Initial_ItemConfig"
+        },"TargetView17": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "beginColumnPages",
+          "viewId": "check",
+          "viewName": "check"
         }
       }
     },
